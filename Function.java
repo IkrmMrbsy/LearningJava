@@ -31,6 +31,10 @@ public class Function {
         overloading1("Rizal", 20);
         overloading1("Rizal");
         //Method Overloading//
+
+        //Recursive Method//
+        System.out.println(factorialRecursive(5));
+        //Recursive Method//
     }
     static void sayHello(){
         System.out.println("Hello World");
@@ -65,7 +69,7 @@ public class Function {
     }
     //Method Return Value//
 
-    //Method src.Variable Argument//
+    //Method Variable Argument//
     static void sayCongrats(String name, int... values){
         int total =0;
         for (var value : values){
@@ -77,7 +81,7 @@ public class Function {
         }else {
             System.out.println("Mohon maaf " + name + " Anda belum lulus" );
         }
-        //Method src.Variable Argument//
+        //Method Variable Argument//
     }
     //Method Overloading//
     //Kemampuan membuat method dengan nama yg sama lebih dari sekali//
@@ -98,6 +102,12 @@ public class Function {
     //Recursive Method//
     //Kemampuan method memanggil method dirinya sendiri//
     //Kasus factorial lebih mudah di selesaikan dengan Recursive Method//
-
+    static int factorialRecursive(int value) {
+        if (value == 1) {
+            return 1;
+        } else {
+            return value * factorialRecursive(value - 1);
+        }
+    }
     //Recursive Method//
 }

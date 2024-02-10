@@ -93,6 +93,5 @@ public class SoalLatihan {
         for (var number = 1; number<=5; number++){
             System.out.println("Nomor ke " + number);
         }
-        
-        }
+    }
 }
